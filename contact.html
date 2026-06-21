@@ -1,35 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
+
 <div class="container">
-      <div class="logo">
-    <img src="images/logo.png" alt="Website Logo">
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>
-</nav>
 
-<h1>Contact Us</h1>
+    <div class="logo">
+        <img src="images/logo.png" alt="Website Logo">
+    </div>
 
-<p>Please send us your feedback.</p>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSe91mjfYkjc53xLBpMMjDB40fKjMGQNw7cNMG4v1HqFahaieQ/viewform?usp=header" method="post" target="_blank">
+    <h1>Contact Us</h1>
 
-    <label>Email:</label><br>
-    <input type="email" name="email" required><br><br>
+    <p>Please send us your feedback.</p>
 
-    <label>Comments:</label><br>
-    <textarea name="comments" rows="6" cols="40" required></textarea><br><br>
+    <form action="YOUR_GOOGLE_FORM_LINK" method="post" target="_blank">
 
-    <button type="submit">Submit</button>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-</form>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="6" required></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
 </div>
-</body>
-</html>
 
+</body>
