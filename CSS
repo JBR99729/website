@@ -9,3 +9,23 @@ body {
 h1 {
     color: #2c3e50;
 }
+.worksheet-box {
+    border: 1px solid #333;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    width: 80%;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #2d7dd2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-button:hover {
+    background-color: #1b5fa7;
+}
