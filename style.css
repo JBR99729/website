@@ -24,7 +24,32 @@ body {
     width: 120px;
     height: auto;
 }
+.worksheet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 25px 0;
+}
 
+.worksheet-tile {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.example-box {
+    background-color: #fff;
+    border-left: 4px solid #2d7dd2;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+@media (max-width: 700px) {
+    .worksheet-grid {
+        grid-template-columns: 1fr;
+    }
+}
 nav {
     margin-bottom: 25px;
     padding-bottom: 10px;
