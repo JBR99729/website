@@ -202,3 +202,30 @@ footer {
 </body>
 </html>
 
+.skill-list {
+    columns: 3;
+    column-gap: 35px;
+    margin-top: 20px;
+}
+
+.skill-list li {
+    break-inside: avoid;
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.skill-list a {
+    text-decoration: none;
+    color: #2d7dd2;
+}
+
+.skill-list a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .skill-list {
+        columns: 1;
+    }
+}
