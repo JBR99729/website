@@ -41,44 +41,64 @@ nav a:hover {
     text-decoration: underline;
 }
 
-h1, h2, h3 {
+h1 {
     color: #2c3e50;
 }
 
-p, ul, li {
+h2 {
+    color: #2c3e50;
+    font-size: 12pt;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #2c3e50;
+}
+
+p,
+ul,
+li {
     line-height: 1.6;
 }
 
+/* Nursery category description */
+
 .section-intro {
-    font-size: 14px;
+    font-size: 13px;
     color: #666666;
     margin-top: -5px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
+/* Worksheet skill lists */
+
 .skill-list {
-    columns: 2;
-    column-gap: 40px;
-    margin-bottom: 30px;
-    padding-left: 20px;
+    columns: 3;
+    column-gap: 35px;
+    margin-bottom: 25px;
+    padding-left: 18px;
 }
 
 .skill-list li {
     break-inside: avoid;
-    margin-bottom: 8px;
-    font-size: 15px;
-    line-height: 1.4;
+    margin-bottom: 4px;
+    line-height: 1.3;
 }
+
+/* Downloadable worksheet links */
 
 .skill-list a {
     color: #2d7dd2;
     text-decoration: none;
-    font-weight: 500;
+    font-size: 9pt;
 }
 
 .skill-list a:hover {
     text-decoration: underline;
 }
+
+/* Existing worksheet layouts */
 
 .worksheet-grid {
     display: grid;
@@ -115,6 +135,8 @@ p, ul, li {
 .download-button:hover {
     background-color: #1b5fa7;
 }
+
+/* Forms */
 
 form {
     max-width: 650px;
@@ -153,6 +175,8 @@ button:hover {
     background-color: #1b5fa7;
 }
 
+/* Footer */
+
 footer {
     text-align: center;
     margin-top: 30px;
@@ -162,7 +186,10 @@ footer {
     color: #666;
 }
 
+/* Mobile */
+
 @media (max-width: 700px) {
+
     body {
         padding: 15px;
     }
@@ -177,5 +204,9 @@ footer {
 
     .skill-list {
         columns: 1;
+    }
+
+    .skill-list a {
+        font-size: 11pt;
     }
 }
