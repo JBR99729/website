@@ -24,6 +24,62 @@ body {
     width: 120px;
     height: auto;
 }
+
+nav {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav a {
+    color: #2d7dd2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+p, ul, li {
+    line-height: 1.6;
+}
+
+.section-intro {
+    font-size: 14px;
+    color: #666666;
+    margin-top: -5px;
+    margin-bottom: 12px;
+}
+
+.skill-list {
+    columns: 2;
+    column-gap: 40px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.skill-list li {
+    break-inside: avoid;
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.skill-list a {
+    color: #2d7dd2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.skill-list a:hover {
+    text-decoration: underline;
+}
+
 .worksheet-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -31,7 +87,8 @@ body {
     margin: 25px 0;
 }
 
-.worksheet-tile {
+.worksheet-tile,
+.worksheet-box {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -43,33 +100,6 @@ body {
     border-left: 4px solid #2d7dd2;
     padding: 10px;
     margin: 15px 0;
-}
-
-@media (max-width: 700px) {
-    .worksheet-grid {
-        grid-template-columns: 1fr;
-    }
-}
-nav {
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-h1, h2, h3 {
-    color: #2c3e50;
-}
-
-p, ul, li {
-    line-height: 1.6;
-}
-
-.worksheet-box {
-    border: 1px solid #333;
-    padding: 15px;
-    margin: 20px 0;
-    background-color: #f9f9f9;
-    border-radius: 5px;
 }
 
 .download-button {
@@ -132,170 +162,20 @@ footer {
     color: #666;
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>Learning Worksheets</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<div class="container">
-
-```
-<div class="logo">
-    <img src="images/logo.png" alt="Learning Worksheets Logo">
-</div>
-
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>
-</nav>
-
-<h1>Learning Worksheets</h1>
-
-<p>
-    Free printable worksheets for students from Nursery to Year 12.
-    Browse by year level and subject to find Maths and Science worksheets.
-</p>
-
-<h2>Available Year Levels</h2>
-
-<div class="year-grid">
-
-    <a href="nursery.html">Nursery</a>
-
-    <!-- Enable these links as content becomes available -->
-
-    <!-- <a href="kindergarten.html">Kindergarten</a> -->
-    <!-- <a href="year1.html">Year 1</a> -->
-    <!-- <a href="year2.html">Year 2</a> -->
-    <!-- <a href="year3.html">Year 3</a> -->
-    <!-- <a href="year4.html">Year 4</a> -->
-    <!-- <a href="year5.html">Year 5</a> -->
-    <!-- <a href="year6.html">Year 6</a> -->
-    <!-- <a href="year7.html">Year 7</a> -->
-    <!-- <a href="year8.html">Year 8</a> -->
-    <!-- <a href="year9.html">Year 9</a> -->
-    <!-- <a href="year10.html">Year 10</a> -->
-    <!-- <a href="year11.html">Year 11</a> -->
-    <!-- <a href="year12.html">Year 12</a> -->
-
-</div>
-
-<footer>
-    <p>&copy; 2026 Learning Worksheets. All rights reserved.</p>
-
-    <p>
-        These resources are provided for educational use by teachers,
-        parents and students only. Commercial use, resale,
-        redistribution or reproduction for profit is prohibited.
-    </p>
-</footer>
-```
-
-</div>
-
-</body>
-</html>
-
-.skill-list {
-    columns: 3;
-    column-gap: 35px;
-    margin-top: 20px;
-}
-
-.skill-list li {
-    break-inside: avoid;
-    margin-bottom: 8px;
-    font-size: 15px;
-    line-height: 1.4;
-}
-
-.skill-list a {
-    text-decoration: none;
-    color: #2d7dd2;
-}
-
-.skill-list a:hover {
-    text-decoration: underline;
-}
-
 @media (max-width: 700px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .worksheet-grid {
+        grid-template-columns: 1fr;
+    }
+
     .skill-list {
         columns: 1;
-    }
-}
-/* =========================
-   COMPACT SKILLS DASHBOARD
-   ========================= */
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 8px;
-    margin: 20px 0 30px;
-}
-
-.skill-card {
-    background: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 6px;
-    padding: 8px;
-    min-height: 85px;
-}
-
-.skill-card h3 {
-    font-size: 13px;
-    margin: 0 0 4px;
-    color: #222222;
-}
-
-.skill-card p {
-    font-size: 10.5px;
-    line-height: 1.3;
-    margin: 0 0 6px;
-    color: #666666;
-}
-
-.skill-card a {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: bold;
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.skill-card a:hover {
-    text-decoration: underline;
-}
-
-.pagination {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.pagination a {
-    display: inline-block;
-    padding: 5px 9px;
-    margin: 2px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 12px;
-    color: #333333;
-    background: #f7f7f7;
-}
-
-.pagination a:hover {
-    background: #eaeaea;
-}
-
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
