@@ -12,44 +12,8 @@ body {
     border: 2px solid #d0d0d0;
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-h1 {
-    color: #2c3e50;
-}
-
-nav {
-    margin-bottom: 20px;
-}
-
-.worksheet-box {
-    border: 1px solid #333;
-    padding: 15px;
-    margin: 20px 0;
-    background-color: #f9f9f9;
-}
-
-.download-button {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #2d7dd2;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.download-button:hover {
-    background-color: #1b5fa7;
-}
-.logo {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.logo img {
-    max-width: 250px;
-    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .logo {
@@ -61,14 +25,44 @@ nav {
     width: 150px;
     height: auto;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
-    margin: 0;
-    padding: 40px;
+
+h1, h2, h3 {
+    color: #2c3e50;
     text-align: left;
 }
 
-.logo {
-    text-align: center;
+p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+nav {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+ul, li {
+    text-align: left;
+}
+
+.worksheet-box {
+    border: 1px solid #333;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #2d7dd2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-button:hover {
+    background-color: #1b5fa7;
 }
