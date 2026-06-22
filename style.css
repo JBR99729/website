@@ -261,3 +261,87 @@ footer {
 .worksheet-tile a {
     font-size: 11px;
 }
+.hero {
+    margin: 20px 0 25px 0;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.hero p {
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 900px;
+}
+
+.year-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.year-card {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    padding: 14px;
+    background: #fafafa;
+    min-height: 55px;
+}
+
+.year-card span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.year-card small {
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+    color: #666;
+}
+
+.year-card.active {
+    background: #eef6ff;
+    border-color: #7bb7f0;
+}
+
+.year-card.active:hover {
+    background: #dff0ff;
+}
+
+.year-card.coming-soon {
+    opacity: 0.55;
+}
+
+footer {
+    margin-top: 35px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
+
+@media (max-width: 700px) {
+    .year-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 450px) {
+    .year-grid {
+        grid-template-columns: 1fr;
+    }
+}
