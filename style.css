@@ -210,3 +210,54 @@ footer {
         font-size: 11pt;
     }
 }
+
+/* Skill Grid */
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.skill-card {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.skill-card a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.skill-card:hover {
+    background: #eef6ff;
+}
+
+.worksheet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.worksheet-tile {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+.worksheet-tile h3 {
+    font-size: 12px;
+    margin: 0 0 8px;
+}
+
+.worksheet-tile a {
+    font-size: 11px;
+}
