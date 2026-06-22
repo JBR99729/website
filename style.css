@@ -535,3 +535,25 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* Breadcrumbs */
+
+.breadcrumbs {
+    font-size: 13px;
+    margin: 15px 0 20px;
+    color: #5f6f7f;
+}
+
+.breadcrumbs a {
+    color: #1f5f99;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    color: #333333;
+    font-weight: 600;
+}
