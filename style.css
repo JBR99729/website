@@ -1,156 +1,153 @@
-/* =========================
-   Global Page Style
-========================= */
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    background: #eef3f8;
     margin: 0;
-    padding: 40px;
-    color: #111;
+    padding: 30px;
+    color: #1f2933;
 }
 
 .container {
     max-width: 1100px;
     margin: auto;
-    background-color: white;
-    border: 2px solid #d0d0d0;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* =========================
-   Logo
-========================= */
+/* Header */
+
+.site-header {
+    border-bottom: 1px solid #dde5ee;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+}
 
 .logo {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
 }
 
 .logo img {
-    width: 120px;
+    width: 115px;
     height: auto;
 }
 
-/* =========================
-   Navigation
-========================= */
-
 nav {
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
 }
 
 nav a {
-    color: #2d7dd2;
+    display: inline-block;
+    color: #1f6fd1;
     text-decoration: none;
     font-weight: bold;
+    margin: 0 10px;
+    font-size: 14px;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* =========================
-   Headings and Text
-========================= */
+/* Welcome frame */
 
-h1 {
-    color: #2c3e50;
-    font-size: 30px;
+.welcome-frame {
+    background: linear-gradient(135deg, #eef6ff, #ffffff);
+    border: 1px solid #cfe3f8;
+    border-radius: 12px;
+    padding: 26px;
+    margin-bottom: 24px;
+}
+
+.welcome-frame h1 {
+    margin-top: 0;
     margin-bottom: 10px;
+    font-size: 32px;
+    color: #24364b;
 }
 
-h2 {
-    color: #2c3e50;
-    font-size: 12pt;
-    margin-top: 25px;
-    margin-bottom: 8px;
-}
-
-h3 {
-    color: #2c3e50;
-}
-
-p,
-ul,
-li {
-    line-height: 1.6;
-}
-
-/* =========================
-   Hero Section
-========================= */
-
-.hero {
-    margin: 20px 0 25px 0;
-}
-
-.hero h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.hero p {
+.welcome-frame p {
+    max-width: 850px;
     font-size: 15px;
-    line-height: 1.5;
-    max-width: 900px;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
 
-/* =========================
-   Home Page Year Grid
-========================= */
+/* Dashboard frame */
+
+.dashboard-frame {
+    border: 1px solid #dde5ee;
+    border-radius: 12px;
+    padding: 22px;
+    background: #fbfcfe;
+}
+
+.section-title {
+    margin-bottom: 16px;
+}
+
+.section-title h2 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    color: #24364b;
+}
+
+.section-title p {
+    margin: 0;
+    font-size: 13px;
+    color: #607080;
+}
+
+/* Year cards */
 
 .year-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-top: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
 }
 
 .year-card {
     display: block;
     text-decoration: none;
-    border: 1px solid #d8d8d8;
-    border-radius: 8px;
-    padding: 14px;
-    background: #fafafa;
-    min-height: 55px;
+    border: 1px solid #d8e1ea;
+    border-radius: 10px;
+    padding: 16px;
+    background: #ffffff;
+    min-height: 62px;
+    transition: 0.2s ease;
 }
 
 .year-card span {
     display: block;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
-    color: #2c3e50;
+    color: #24364b;
 }
 
 .year-card small {
     display: block;
-    margin-top: 5px;
+    margin-top: 6px;
     font-size: 11px;
-    color: #666;
+    color: #607080;
 }
 
 .year-card.active {
-    background: #eef6ff;
-    border-color: #7bb7f0;
+    background: #eaf5ff;
+    border-color: #75b8f0;
 }
 
 .year-card.active:hover {
     background: #dff0ff;
+    transform: translateY(-2px);
 }
 
 .year-card.coming-soon {
+    background: #f7f7f7;
     opacity: 0.55;
 }
 
-/* =========================
-   Nursery Subject Table of Contents
-========================= */
+/* Nursery subject table */
 
 .subject-grid {
     display: grid;
@@ -160,17 +157,17 @@ li {
 }
 
 .subject-card {
-    border: 1px solid #d8d8d8;
-    border-radius: 8px;
-    background: #fafafa;
-    padding: 16px;
+    border: 1px solid #d8e1ea;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 18px;
 }
 
 .subject-card h3 {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 18px;
-    color: #2c3e50;
+    color: #24364b;
 }
 
 .toc-list {
@@ -197,13 +194,41 @@ li {
     color: #666;
 }
 
-/* =========================
-   Skill Lists
-========================= */
+/* Worksheet tiles */
+
+.worksheet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.worksheet-tile,
+.worksheet-box {
+    background: #ffffff;
+    border: 1px solid #d8e1ea;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+}
+
+.worksheet-tile h3 {
+    font-size: 12px;
+    margin: 0 0 8px;
+    color: #24364b;
+}
+
+.worksheet-tile a {
+    font-size: 11px;
+    color: #1f6fd1;
+    font-weight: bold;
+}
+
+/* Skill list */
 
 .section-intro {
     font-size: 13px;
-    color: #666666;
+    color: #666;
     margin-top: -5px;
     margin-bottom: 10px;
 }
@@ -227,108 +252,14 @@ li {
     font-size: 9pt;
 }
 
-.skill-list a:hover {
-    text-decoration: underline;
-}
-
-/* =========================
-   Skill Cards
-========================= */
-
-.skill-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.skill-card {
-    background: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 10px;
-    text-align: center;
-    font-size: 12px;
-}
-
-.skill-card a {
-    text-decoration: none;
-    color: #0066cc;
-    font-weight: bold;
-}
-
-.skill-card:hover {
-    background: #eef6ff;
-}
-
-/* =========================
-   Worksheet Tiles
-========================= */
-
-.worksheet-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.worksheet-tile,
-.worksheet-box {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 10px;
-    text-align: center;
-}
-
-.worksheet-tile h3 {
-    font-size: 12px;
-    margin: 0 0 8px;
-}
-
-.worksheet-tile a {
-    font-size: 11px;
-}
-
-/* =========================
-   Example Box
-========================= */
-
-.example-box {
-    background-color: #fff;
-    border-left: 4px solid #2d7dd2;
-    padding: 10px;
-    margin: 15px 0;
-}
-
-/* =========================
-   Download Button
-========================= */
-
-.download-button {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #2d7dd2;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.download-button:hover {
-    background-color: #1b5fa7;
-}
-
-/* =========================
-   Forms
-========================= */
+/* Form */
 
 form {
     max-width: 650px;
-    background-color: #f8f9fa;
+    background: #f8f9fa;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1px solid #d8e1ea;
+    border-radius: 10px;
 }
 
 label {
@@ -340,45 +271,51 @@ textarea {
     width: 100%;
     padding: 12px;
     margin: 8px 0 15px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ccd6e0;
+    border-radius: 6px;
     box-sizing: border-box;
     font-size: 16px;
 }
 
-button {
-    background-color: #2d7dd2;
+button,
+.download-button {
+    display: inline-block;
+    background: #2d7dd2;
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
+    padding: 11px 18px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-button:hover {
-    background-color: #1b5fa7;
+button:hover,
+.download-button:hover {
+    background: #1b5fa7;
 }
 
-/* =========================
-   Footer
-========================= */
+/* Footer */
 
 footer {
-    margin-top: 35px;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
+    margin-top: 34px;
+    border-top: 1px solid #dde5ee;
+    padding-top: 18px;
     text-align: center;
     font-size: 12px;
-    color: #555;
+    color: #56616d;
 }
 
-/* =========================
-   Mobile Layout
-========================= */
+/* Mobile */
+
+@media (max-width: 900px) {
+    .year-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 @media (max-width: 700px) {
-
     body {
         padding: 15px;
     }
@@ -387,8 +324,7 @@ footer {
         padding: 20px;
     }
 
-    h1,
-    .hero h1 {
+    .welcome-frame h1 {
         font-size: 26px;
     }
 
@@ -400,21 +336,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .worksheet-grid {
-        grid-template-columns: 1fr;
-    }
-
     .skill-list {
         column-count: 1;
-    }
-
-    .skill-list a {
-        font-size: 11pt;
     }
 }
 
 @media (max-width: 450px) {
-
     .year-grid {
         grid-template-columns: 1fr;
     }
