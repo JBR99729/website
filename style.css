@@ -295,7 +295,36 @@ button:hover,
 .download-button:hover {
     background: #1b5fa7;
 }
+/* =========================
+   Three Banner Boxes
+========================= */
 
+.banner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.banner-box {
+    border: 1px solid #d8e1ea;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 12px;
+}
+
+.banner-box h3 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #24364b;
+}
+
+.banner-box p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.35;
+    color: #607080;
+}
 /* Footer */
 
 footer {
